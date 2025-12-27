@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+void update(int *p) {
+    *p = 50;
+}
+
+int main() {
+    int a = 10;
+    update(&a);
+
+    printf("Updated value = %d", a);
+    return 0;
+}
